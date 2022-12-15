@@ -1,0 +1,2 @@
+# websocket-auth
+Websocket authentication
