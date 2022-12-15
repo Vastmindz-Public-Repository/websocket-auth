@@ -121,7 +121,7 @@ body = {
 }
 
 # Make the request
-response = requests.post(url, auth=auth, json=data)
+response = requests.post(url, auth=auth, json=body)
 
 # Print the response
 print(response.text)
