@@ -52,7 +52,7 @@ To use Vastmindz's SDKs, you must first authenticate with our authentication ser
 ## Getting started
 The authentication service is a simple REST API that will return a websocket token. To use this service, you must first obtain access credentials from your Vastmindz representive. The below is the basic structure of the authentication request.
 
-You MUST first obtain the credentials below from your Vastmindz representive.
+You MUST first obtain the credentials below from your Vastmindz representative.
 
 ```
 USERNAME=<YOUR USERNAME>
