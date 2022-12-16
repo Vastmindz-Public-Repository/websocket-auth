@@ -175,8 +175,8 @@ import Foundation
 
 let environment = "rppg-prod"
 let url = "https://" + environment + ".xyz/admin-basic/access/onetime-key/generate"
-let auth = URLCredential(user: "helfie-admin", password: "HelfieAdmin3939475", persistence: .none)
-let body: [String: Any] = ["token": "24283a33-2b25-4559-9cdc-cb40c9e7226f"]
+let auth = URLCredential(user: "<YOUR USERNAME>", password: "<YOUR PASSWROD>", persistence: .none)
+let body: [String: Any] = ["token": "<YOUR MASTER TOKEN>"]
 let jsonData = try! JSONSerialization.data(withJSONObject: body)
 
 var request = URLRequest(url: URL(string: url)!)
