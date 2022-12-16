@@ -102,6 +102,8 @@ Explanation of the response:
 
 You can use the following examples to get started with generating authentication keys. You will need to replace the environment variable with the environment you are using. You will also need to replace the USERNAME, PASSWORD, and MASTER_TOKEN variables with the credentials you received from your Vastmindz representive.
 
+**PLEASE NOTE THAT EACH EXAMPLE MUST BE TESTED THOROUGHLY ON YOUR SIDE BEFORE DEPLOYING**
+
 **Python**
 ```python
 import requests
