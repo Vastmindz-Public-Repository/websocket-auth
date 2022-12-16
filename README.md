@@ -167,10 +167,37 @@ curl -X POST "https://{{ENVIRONMENT}}.xyz/admin-basic/access/onetime-key/generat
 -H "Authorization: Basic {{base64 encoded string}}" \
 -H "Content-Type: application/json" \
 -d '{"token":"{{MASTER_TOKEN}}"}'
-
 ```
 
+**SWIFT (iOS)**
+```swift
+import Foundation
 
+let environment = "rppg-prod"
+let url = "https://" + environment + ".xyz/admin-basic/access/onetime-key/generate"
+let auth = URLCredential(user: "helfie-admin", password: "HelfieAdmin3939475", persistence: .none)
+let body: [String: Any] = ["token": "24283a33-2b25-4559-9cdc-cb40c9e7226f"]
+let jsonData = try! JSONSerialization.data(withJSONObject: body)
+
+var request = URLRequest(url: URL(string: url)!)
+request.httpMethod = "POST"
+request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+request.httpBody = jsonData
+request.addValue("Basic \(auth.base64Encoded)", forHTTPHeaderField: "Authorization")
+
+let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+    if let error = error {
+        print(error)
+        return
+    }
+
+    if let data = data, let responseText = String(data: data, encoding: .utf8) {
+        print(responseText)
+    }
+}
+
+task.resume()
+```
 
 <!-- CONTACT -->
 ## Contact
