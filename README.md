@@ -62,7 +62,7 @@ MASTER_TOKEN=<YOUR MASTER TOKEN>
 
 The credentials will be specific to your environment. The following environments are available and the following prefixes will be used:
 ```
-rppg-dev2 = Development Environment
+vm-development = Development Environment
 rppg-prod = Production Environment
 ```
 
@@ -110,7 +110,7 @@ import requests
 import os
 
 # Specify the environment
-environment = "rppg-dev2"
+environment = "vm-development"
 
 # Construct the URL
 url = "https://" + "environment" + ".xyz/admin-basic/access/onetime-key/generate"
