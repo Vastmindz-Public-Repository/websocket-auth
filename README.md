@@ -132,7 +132,7 @@ print(response.text)
 **Javascript**
 ```javascript
 // Specify the environment
-const environment = "rppg-dev2";
+const environment = "vm-development";
 
 // Construct the URL
 const url = "https://" + environment + ".xyz/admin-basic/access/onetime-key/generate";
